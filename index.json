@@ -1,0 +1,13 @@
+[
+    {
+        "name": "led-effects",
+        "title": "LED Effects",
+        "description": "Police WLED effect"
+    },
+    {
+        "name": "epaper",
+        "title": "epaper",
+        "description": "Waveshare epaper demo"
+    }
+]
+
