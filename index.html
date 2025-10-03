@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ESPHome Wokwi</title>
+        <title>Rust esp32 on Wokwi</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="//unpkg.com/alpinejs" defer></script>
         <script defer>
@@ -52,7 +52,7 @@
             
             <div class="flex items-center gap-4">
                 <h1 class="text-2xl font-bold tracking-tight">
-                    <a href="/esphome-wokwi" class="hover:opacity-80 transition-opacity">
+                    <a href="/rustesp32-wokwi" class="hover:opacity-80 transition-opacity">
                         <span class="text-gray-900">Rust ESP32 </span><span class="text-[#FE4A60]"> Wokwi</span>
                     </a>
                 </h1>
@@ -100,10 +100,10 @@
         <!-- Example repositories section -->
         
             <div class="mt-0">
-                <p class="opacity-70 ">Try 🚀<br> Opens Wokwi Experimental Viewer in New Tab<br>also opens ESPHOME YAML below ↓ </p>
+                <p class="opacity-70 ">Try 🚀<br> Opens Wokwi Experimental Viewer in New Tab</p>
                 
 
-                    <div class="flex flex-wrap gap-2 mt-10" x-data="{ items: [] }" x-init="items = await (await fetch('/esphome-wokwi/index.json')).json()">
+                    <div class="flex flex-wrap gap-2 mt-10" x-data="{ items: [] }" x-init="items = await (await fetch('/rustesp32-wokwi/index.json')).json()">
                         <template x-for="item in items" :key="item.name">
                             <button x-text="item.title"  @click="clicked(item.name)" class="px-4 py-1 bg-[#EBDBB7] hover:bg-[#FFC480] text-gray-900 rounded transition-colors duration-200 border-[3px] border-gray-900 relative hover:-translate-y-px hover:-translate-x-px">
                             </button>    
